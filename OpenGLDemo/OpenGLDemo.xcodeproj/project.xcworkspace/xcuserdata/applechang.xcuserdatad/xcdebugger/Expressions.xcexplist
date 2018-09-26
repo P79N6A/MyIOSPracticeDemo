@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[OpenCameraGLESView layoutSubviews]:OpenCameraGLESView.m">
+      </ContextState>
+      <ContextState
+         contextName = "+[GameLogic sliceRotateWith:rotationState:cubes:]:GameLogic.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "cubes[2]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MagicCuberViewCtrl drawFrame]:MagicCuberViewCtrl.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "ATTRIBUTE_VERTEX">
+            </PersistentString>
+            <PersistentString
+               value = "cubes[i]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ODChatCommonCell drawRect:]:ODChatCommonCell.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[OpenCameraGLESView setRender:]:OpenCameraGLESView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "_videoFrameSize">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AutoHeightRichText fitWithLock:doneList:maxLine:t_line:t_x:]:AutoHeightRichText.m">
+      </ContextState>
+      <ContextState
+         contextName = "swapColors:GameLogic.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[OpenCameraGLESView setupFrameAndRenderBuffer]:OpenCameraGLESView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "_render">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[DemoDrawImageOpenGLES viewDidLoad]:DemoDrawImageOpenGLES.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "_frameCAEAGLLayer">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[OpenCameraGLESView setTexture:]:OpenCameraGLESView.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[OpenCameraGLESView calculateViewPortRect:withImageSize:]:OpenCameraGLESView.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[EAGLView initWithFrame:]:EAGLView.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[UITableViewDemo tableView:numberOfRowsInSection:]:UITableViewDemoCtrl.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "_autoHeightRichTexts">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
