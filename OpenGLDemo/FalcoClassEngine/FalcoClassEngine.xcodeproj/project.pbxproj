@@ -1,0 +1,372 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10046D8721A6D48D0058FE5B /* FalcoClassEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 10046D8621A6D48D0058FE5B /* FalcoClassEngine.m */; };
+		10046DDA21A6D8500058FE5B /* FalcoServiceCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 10046DD021A6D84F0058FE5B /* FalcoServiceCenter.m */; };
+		10046DDC21A6D8500058FE5B /* FalcoObjectFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 10046DD721A6D8500058FE5B /* FalcoObjectFactory.m */; };
+		10046DDD21A6D8500058FE5B /* FalcoComponentMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 10046DD821A6D8500058FE5B /* FalcoComponentMgr.m */; };
+		10046EB621AC1C620058FE5B /* FalcoUtilCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 10046EB521AC1C620058FE5B /* FalcoUtilCore.m */; };
+		10046EC121AC23050058FE5B /* FalcoXMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 10046EBE21AC23050058FE5B /* FalcoXMLDictionary.m */; };
+		108AF7C621D1CA2A0082AA98 /* FalcoSingletonMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 108AF7C521D1CA2A0082AA98 /* FalcoSingletonMgr.m */; };
+		108AF7C921D1CCD50082AA98 /* FalcoComponentRoot.m in Sources */ = {isa = PBXBuildFile; fileRef = 108AF7C821D1CCD50082AA98 /* FalcoComponentRoot.m */; };
+		10B5BE5721ACE195006524A2 /* ClassMetaInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B5BE5621ACE195006524A2 /* ClassMetaInfo.m */; };
+		844B825222152C8D0065E0AB /* FalcoUtilCore.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84197EE921B17FDF009DE57C /* FalcoUtilCore.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		10046D8021A6D48D0058FE5B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = include;
+			dstSubfolderSpec = 16;
+			files = (
+				844B825222152C8D0065E0AB /* FalcoUtilCore.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		10046D8221A6D48D0058FE5B /* libFalcoClassEngine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFalcoClassEngine.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		10046D8521A6D48D0058FE5B /* FalcoClassEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FalcoClassEngine.h; sourceTree = "<group>"; };
+		10046D8621A6D48D0058FE5B /* FalcoClassEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FalcoClassEngine.m; sourceTree = "<group>"; };
+		10046DD021A6D84F0058FE5B /* FalcoServiceCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FalcoServiceCenter.m; sourceTree = "<group>"; };
+		10046DD321A6D84F0058FE5B /* FalcoObjectFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FalcoObjectFactory.h; sourceTree = "<group>"; };
+		10046DD421A6D8500058FE5B /* FalcoComponentMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FalcoComponentMgr.h; sourceTree = "<group>"; };
+		10046DD521A6D8500058FE5B /* FalcoServiceCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FalcoServiceCenter.h; sourceTree = "<group>"; };
+		10046DD721A6D8500058FE5B /* FalcoObjectFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FalcoObjectFactory.m; sourceTree = "<group>"; };
+		10046DD821A6D8500058FE5B /* FalcoComponentMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FalcoComponentMgr.m; sourceTree = "<group>"; };
+		10046EB521AC1C620058FE5B /* FalcoUtilCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FalcoUtilCore.m; sourceTree = "<group>"; };
+		10046EBE21AC23050058FE5B /* FalcoXMLDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FalcoXMLDictionary.m; sourceTree = "<group>"; };
+		10046EC021AC23050058FE5B /* FalcoXMLDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FalcoXMLDictionary.h; sourceTree = "<group>"; };
+		108AF7C421D1CA2A0082AA98 /* FalcoSingletonMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FalcoSingletonMgr.h; sourceTree = "<group>"; };
+		108AF7C521D1CA2A0082AA98 /* FalcoSingletonMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FalcoSingletonMgr.m; sourceTree = "<group>"; };
+		108AF7C721D1CCBC0082AA98 /* FalcoComponentRoot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FalcoComponentRoot.h; sourceTree = "<group>"; };
+		108AF7C821D1CCD50082AA98 /* FalcoComponentRoot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FalcoComponentRoot.m; sourceTree = "<group>"; };
+		10B5BE5521ACE194006524A2 /* ClassMetaInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassMetaInfo.h; sourceTree = "<group>"; };
+		10B5BE5621ACE195006524A2 /* ClassMetaInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassMetaInfo.m; sourceTree = "<group>"; };
+		84197EE421B17FDF009DE57C /* IFalcoObjectFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFalcoObjectFactory.h; sourceTree = "<group>"; };
+		84197EE521B17FDF009DE57C /* IFalcoServiceCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFalcoServiceCenter.h; sourceTree = "<group>"; };
+		84197EE721B17FDF009DE57C /* IFalcoComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFalcoComponent.h; sourceTree = "<group>"; };
+		84197EE821B17FDF009DE57C /* IFalcoClassEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFalcoClassEngine.h; sourceTree = "<group>"; };
+		84197EE921B17FDF009DE57C /* FalcoUtilCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FalcoUtilCore.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		10046D7F21A6D48D0058FE5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10046D7921A6D48D0058FE5B = {
+			isa = PBXGroup;
+			children = (
+				84197EE221B17FDF009DE57C /* include */,
+				10046D8421A6D48D0058FE5B /* FalcoClassEngine */,
+				10046D8321A6D48D0058FE5B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		10046D8321A6D48D0058FE5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				10046D8221A6D48D0058FE5B /* libFalcoClassEngine.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		10046D8421A6D48D0058FE5B /* FalcoClassEngine */ = {
+			isa = PBXGroup;
+			children = (
+				108AF7C821D1CCD50082AA98 /* FalcoComponentRoot.m */,
+				108AF7C421D1CA2A0082AA98 /* FalcoSingletonMgr.h */,
+				108AF7C521D1CA2A0082AA98 /* FalcoSingletonMgr.m */,
+				10046EC021AC23050058FE5B /* FalcoXMLDictionary.h */,
+				10046EBE21AC23050058FE5B /* FalcoXMLDictionary.m */,
+				10046EB521AC1C620058FE5B /* FalcoUtilCore.m */,
+				10B5BE5521ACE194006524A2 /* ClassMetaInfo.h */,
+				10B5BE5621ACE195006524A2 /* ClassMetaInfo.m */,
+				10046DD421A6D8500058FE5B /* FalcoComponentMgr.h */,
+				10046DD821A6D8500058FE5B /* FalcoComponentMgr.m */,
+				10046DD321A6D84F0058FE5B /* FalcoObjectFactory.h */,
+				10046DD721A6D8500058FE5B /* FalcoObjectFactory.m */,
+				10046DD521A6D8500058FE5B /* FalcoServiceCenter.h */,
+				10046DD021A6D84F0058FE5B /* FalcoServiceCenter.m */,
+				10046D8521A6D48D0058FE5B /* FalcoClassEngine.h */,
+				10046D8621A6D48D0058FE5B /* FalcoClassEngine.m */,
+			);
+			path = FalcoClassEngine;
+			sourceTree = "<group>";
+		};
+		84197EE221B17FDF009DE57C /* include */ = {
+			isa = PBXGroup;
+			children = (
+				108AF7C721D1CCBC0082AA98 /* FalcoComponentRoot.h */,
+				84197EE421B17FDF009DE57C /* IFalcoObjectFactory.h */,
+				84197EE521B17FDF009DE57C /* IFalcoServiceCenter.h */,
+				84197EE721B17FDF009DE57C /* IFalcoComponent.h */,
+				84197EE821B17FDF009DE57C /* IFalcoClassEngine.h */,
+				84197EE921B17FDF009DE57C /* FalcoUtilCore.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		10046D8121A6D48D0058FE5B /* FalcoClassEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10046D8B21A6D48D0058FE5B /* Build configuration list for PBXNativeTarget "FalcoClassEngine" */;
+			buildPhases = (
+				10046D7E21A6D48D0058FE5B /* Sources */,
+				10046D7F21A6D48D0058FE5B /* Frameworks */,
+				10046D8021A6D48D0058FE5B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FalcoClassEngine;
+			productName = FalcoClassEngine;
+			productReference = 10046D8221A6D48D0058FE5B /* libFalcoClassEngine.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		10046D7A21A6D48D0058FE5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = applechang;
+				TargetAttributes = {
+					10046D8121A6D48D0058FE5B = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 10046D7D21A6D48D0058FE5B /* Build configuration list for PBXProject "FalcoClassEngine" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 10046D7921A6D48D0058FE5B;
+			productRefGroup = 10046D8321A6D48D0058FE5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				10046D8121A6D48D0058FE5B /* FalcoClassEngine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		10046D7E21A6D48D0058FE5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10046EB621AC1C620058FE5B /* FalcoUtilCore.m in Sources */,
+				10046DDD21A6D8500058FE5B /* FalcoComponentMgr.m in Sources */,
+				10B5BE5721ACE195006524A2 /* ClassMetaInfo.m in Sources */,
+				108AF7C621D1CA2A0082AA98 /* FalcoSingletonMgr.m in Sources */,
+				10046DDC21A6D8500058FE5B /* FalcoObjectFactory.m in Sources */,
+				10046D8721A6D48D0058FE5B /* FalcoClassEngine.m in Sources */,
+				10046DDA21A6D8500058FE5B /* FalcoServiceCenter.m in Sources */,
+				108AF7C921D1CCD50082AA98 /* FalcoComponentRoot.m in Sources */,
+				10046EC121AC23050058FE5B /* FalcoXMLDictionary.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		10046D8921A6D48D0058FE5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		10046D8A21A6D48D0058FE5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		10046D8C21A6D48D0058FE5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/../include\"";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"$(BUILT_PRODUCTS_DIR)/libFalcoComponents.a",
+					"-force_load",
+					"$(BUILT_PRODUCTS_DIR)/libFalcoClassEngine.a",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 i386 x86_64 arm64 armv7s";
+			};
+			name = Debug;
+		};
+		10046D8D21A6D48D0058FE5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/../include\"";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"$(BUILT_PRODUCTS_DIR)/libFalcoComponents.a",
+					"-force_load",
+					"$(BUILT_PRODUCTS_DIR)/libFalcoClassEngine.a",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 i386 x86_64 arm64 armv7s";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10046D7D21A6D48D0058FE5B /* Build configuration list for PBXProject "FalcoClassEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10046D8921A6D48D0058FE5B /* Debug */,
+				10046D8A21A6D48D0058FE5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10046D8B21A6D48D0058FE5B /* Build configuration list for PBXNativeTarget "FalcoClassEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10046D8C21A6D48D0058FE5B /* Debug */,
+				10046D8D21A6D48D0058FE5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 10046D7A21A6D48D0058FE5B /* Project object */;
+}

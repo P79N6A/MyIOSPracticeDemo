@@ -46,7 +46,7 @@
     self.totalScale = 1;
     //int width = self.view.frame.size.width;
     //int height = self.view.frame.size.height;
-    _frameCAEAGLLayer = CGRectMake(50, 100, 200, 200);
+    _frameCAEAGLLayer = CGRectMake(50, 100, 300, 400);
     //_frameCAEAGLLayer = self.view.bounds;
     _viewDrawImage = [[OpenCameraGLESView alloc] initWithFrame:_frameCAEAGLLayer withHighResolution:YES];
     _viewDrawImage.viewTag = 1;

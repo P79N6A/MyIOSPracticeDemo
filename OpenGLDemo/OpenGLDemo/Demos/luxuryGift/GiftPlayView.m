@@ -11,6 +11,7 @@
 #import "GiftPlayView.h"
 #import "GPWeakSelectorTarget.h"
 #import "GLiveGLShareInstance.h"
+#import "UIDevice+Hardware.h"
 
 
 NSString * const kGPStatusKey = @"status";
@@ -52,6 +53,11 @@ static void *GPAVPlayerPlaybackViewControllerStatusObservationContext = &GPAVPla
         NSError *error = nil;
         [[AVAudioSession sharedInstance] setActive:YES error:&error];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(routeChange:) name:AVAudioSessionRouteChangeNotification object:nil];
+        
+        if ([[UIDevice currentDevice] platformType] == UIDeviceXiPhone)
+        {
+            self.needAlignCenterClamp = YES;//iphonex 机型上豪华礼物要居中裁剪
+        }
         
     }
     return self;

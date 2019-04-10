@@ -15,6 +15,7 @@
 #import "DemoTriangleViewController.h"
 #import "DemoDrawImageCoreGraphics.h"
 #import "DemoDrawImageOpenGLES.h"
+#import "DatePickerViewCtrl.h"
 #import "OpenCameraGLESViewCtrl.h"
 #import "UITableViewDemoCtrlNew.h"
 #import "ODLiveModeChatViewCtrl.h"
@@ -25,9 +26,12 @@
 #import "LottieShowViewController.h"
 #import "RotateCameraImageCuberViewCtrl.h"
 #import "MagicCuberViewCtrl.h"
+#import "UIBubbleViewDemoCtrl.h"
 
 typedef NS_ENUM(NSUInteger, DemoOpenGLES) {
-    kDemoMagicImageCuber = 0,
+    kDemoBubbleView = 0,
+    kDemoDatePicker,
+    kDemoMagicImageCuber,
     kDemoRotateCameraImageCuber,
     kDemoLottieAnimation,
     kDemoPicPicker,
@@ -71,6 +75,8 @@ typedef NS_ENUM(NSUInteger, DemoOpenGLES) {
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
 
     self.demosOpenGL = @[
+                         @"气泡控件",
+                         @"时间拾取控件",
                          @"魔方",
                          @"旋转立方体图形",
                          @"IOSLottie动画练习",
@@ -129,7 +135,19 @@ typedef NS_ENUM(NSUInteger, DemoOpenGLES) {
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row == kDemoMagicImageCuber) {
+    if (indexPath.row == kDemoBubbleView) {
+        UIBubbleViewDemoCtrl* demo = [[UIBubbleViewDemoCtrl alloc]init];
+        demo.view.backgroundColor = [UIColor whiteColor];
+        demo.navigationItem.title = @"气泡";
+        [self.navigationController pushViewController:demo animated:YES];
+        return;
+    }else if (indexPath.row == kDemoDatePicker) {
+        DatePickerViewCtrl* demo = [[DatePickerViewCtrl alloc]init];
+        demo.view.backgroundColor = [UIColor whiteColor];
+        demo.navigationItem.title = @"时间拾取";
+        [self.navigationController pushViewController:demo animated:YES];
+        return;
+    }else if (indexPath.row == kDemoMagicImageCuber) {
         MagicCuberViewCtrl* demo = [[MagicCuberViewCtrl alloc]init];
         demo.view.backgroundColor = [UIColor whiteColor];
         demo.navigationItem.title = @"魔方";

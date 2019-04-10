@@ -203,6 +203,11 @@ void ksPerspective(KSMatrix4 *result, float fovy, float aspect, float nearZ, flo
 
 void ksOrtho(KSMatrix4 *result, float left, float right, float bottom, float top, float nearZ, float farZ)
 {
+    // {2/(right-left),        0,                    0,             -(right+left)/(right-left),
+    //  0,                     2/(top-bottom),       0,             -(top+bottom)/(top-bottom),
+    //  0,                     0,                   -2/(far-near),  -(far+near)/(far-near),
+    //  0,                     0,                    0,             1
+    
     float       deltaX = right - left;
     float       deltaY = top - bottom;
     float       deltaZ = farZ - nearZ;

@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10005E712255BE9600C7E072 /* ODPopMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10005E702255BE9600C7E072 /* ODPopMenuViewController.m */; };
+		1003ADAD2254AD6C00032543 /* UIBubbleViewDemoCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1003ADAC2254AD6C00032543 /* UIBubbleViewDemoCtrl.m */; };
+		1003ADB02254AF2300032543 /* ODPopBubbleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1003ADAF2254AF2300032543 /* ODPopBubbleViewController.m */; };
+		1003ADB52254AF5800032543 /* ODMenuArrowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1003ADB12254AF5700032543 /* ODMenuArrowView.m */; };
+		1003ADB62254AF5800032543 /* ODPopMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1003ADB32254AF5700032543 /* ODPopMenuItem.m */; };
+		1003ADB92254B03D00032543 /* NSString+TextSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 1003ADB82254B03D00032543 /* NSString+TextSize.m */; };
+		1003ADC02254B40E00032543 /* ODPopoverPluginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1003ADBF2254B40E00032543 /* ODPopoverPluginViewController.m */; };
 		1009A7C620158B63000F5730 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1009A7C520158B5A000F5730 /* 1.jpg */; };
 		100FAB9A210F3A0C009CB90D /* PLActionSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 100FAB98210F3A0C009CB90D /* PLActionSheetView.m */; };
 		100FAB9F210F3D6D009CB90D /* PLUtilUIScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 100FAB9E210F3D6D009CB90D /* PLUtilUIScreen.m */; };
@@ -30,8 +37,6 @@
 		10415820212C0AE500E5BF9B /* UIImage+labGrayImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1041581D212C0AE400E5BF9B /* UIImage+labGrayImage.m */; };
 		10415821212C0AE500E5BF9B /* UIImage+size.m in Sources */ = {isa = PBXBuildFile; fileRef = 1041581F212C0AE500E5BF9B /* UIImage+size.m */; };
 		10415828212C0CB500E5BF9B /* UIScreenEx.mm in Sources */ = {isa = PBXBuildFile; fileRef = 10415826212C0CB500E5BF9B /* UIScreenEx.mm */; };
-		10415870212C4EC500E5BF9B /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1041586F212C4EC500E5BF9B /* ARKit.framework */; };
-		10415872212C4F9600E5BF9B /* MetalPerformanceShaders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10415871212C4F9600E5BF9B /* MetalPerformanceShaders.framework */; };
 		1041B8142047E73F000A5BA2 /* LOTAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 1041B79A2047E73E000A5BA2 /* LOTAsset.m */; };
 		1041B8152047E73F000A5BA2 /* LOTAssetGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1041B79C2047E73E000A5BA2 /* LOTAssetGroup.m */; };
 		1041B8162047E73F000A5BA2 /* LOTLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1041B79E2047E73E000A5BA2 /* LOTLayer.m */; };
@@ -87,6 +92,10 @@
 		1041B8482047E73F000A5BA2 /* LOTComposition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1041B8132047E73F000A5BA2 /* LOTComposition.m */; };
 		1041B84B2047ECC4000A5BA2 /* ODGiftH264ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1041B84A2047ECC4000A5BA2 /* ODGiftH264ViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1041B9E3204F9B1B000A5BA2 /* ODFreeChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1041B9E2204F9B1B000A5BA2 /* ODFreeChatViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1048268A221674EB009458D0 /* libFalcoClassEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10482685221674C9009458D0 /* libFalcoClassEngine.a */; };
+		1048268B221674EB009458D0 /* libFalcoComponents.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1048267F221674C4009458D0 /* libFalcoComponents.a */; };
+		10482691221677EB009458D0 /* TLProgramModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1048268F221677EB009458D0 /* TLProgramModel.m */; };
+		10482695221693C9009458D0 /* TLEditProgramDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10482693221693C9009458D0 /* TLEditProgramDetailView.m */; };
 		10643E5B20230D0F003175FF /* GLiveGLUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = 10643E5A20230D0F003175FF /* GLiveGLUtil.c */; };
 		106D3BB6212701AF0065B745 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 106D3BB5212701AF0065B745 /* libicucore.tbd */; };
 		106D3BB8212701B70065B745 /* libiconv.2.4.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 106D3BB7212701B60065B745 /* libiconv.2.4.0.tbd */; };
@@ -105,10 +114,6 @@
 		10915EA41EFE92830013C5D2 /* GLiveMiniMempool.mm in Sources */ = {isa = PBXBuildFile; fileRef = 10915EA31EFE92830013C5D2 /* GLiveMiniMempool.mm */; };
 		10AA602720173ACA00C02084 /* GLiveGLShareInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AA602620173ACA00C02084 /* GLiveGLShareInstance.m */; };
 		10AE30B421393EA800B4CB01 /* RotateCameraImageCuberViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AE30B321393EA800B4CB01 /* RotateCameraImageCuberViewCtrl.m */; };
-		10AE30C22139408100B4CB01 /* TextureHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AE30B82139408000B4CB01 /* TextureHelper.m */; };
-		10AE30C32139408100B4CB01 /* TextureLoader.mm in Sources */ = {isa = PBXBuildFile; fileRef = 10AE30BA2139408000B4CB01 /* TextureLoader.mm */; };
-		10AE30C42139408100B4CB01 /* GLESMath.c in Sources */ = {isa = PBXBuildFile; fileRef = 10AE30BF2139408100B4CB01 /* GLESMath.c */; };
-		10AE30C52139408100B4CB01 /* GLESUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AE30C02139408100B4CB01 /* GLESUtils.m */; };
 		10AE30C82139429200B4CB01 /* CameraCuberGLESView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 10AE30C62139429200B4CB01 /* CameraCuberGLESView.mm */; };
 		10AE30D12139433000B4CB01 /* ParametricSurface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10AE30CC2139433000B4CB01 /* ParametricSurface.cpp */; };
 		10AE30D22139433000B4CB01 /* DrawableVBOFactory.mm in Sources */ = {isa = PBXBuildFile; fileRef = 10AE30CE2139433000B4CB01 /* DrawableVBOFactory.mm */; };
@@ -127,6 +132,12 @@
 		10C75D1E1EE6ECA500EA51E9 /* OpenCameraGLESView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C75D1D1EE6ECA500EA51E9 /* OpenCameraGLESView.m */; };
 		10C75D251EE6EF3D00EA51E9 /* OpenCameraGLESViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C75D241EE6EF3D00EA51E9 /* OpenCameraGLESViewCtrl.m */; };
 		10C75D281EE7A8E400EA51E9 /* GLiveCameraManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 10C75D271EE7A8E400EA51E9 /* GLiveCameraManager.mm */; };
+		10D14CF0215BB58A0022FE43 /* GLESUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D14CE8215BB58A0022FE43 /* GLESUtils.m */; };
+		10D14CF1215BB58A0022FE43 /* TextureHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D14CEB215BB58A0022FE43 /* TextureHelper.m */; };
+		10D14CF2215BB58A0022FE43 /* GLESMath.c in Sources */ = {isa = PBXBuildFile; fileRef = 10D14CED215BB58A0022FE43 /* GLESMath.c */; };
+		10D14CF3215BB58A0022FE43 /* TextureLoader.mm in Sources */ = {isa = PBXBuildFile; fileRef = 10D14CEF215BB58A0022FE43 /* TextureLoader.mm */; };
+		10D14D38215E68740022FE43 /* momoda.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 10D14D37215E68730022FE43 /* momoda.mp4 */; };
+		10D14D3C215F296F0022FE43 /* lihua.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 10D14D3B215F296F0022FE43 /* lihua.mp4 */; };
 		10D18A431FF37CBA00307012 /* testword.png in Resources */ = {isa = PBXBuildFile; fileRef = 10D18A421FF37CBA00307012 /* testword.png */; };
 		10D29E1C200DF61000DE2117 /* GiftPlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D29E1B200DF61000DE2117 /* GiftPlayView.m */; };
 		10D29E20200DF71400DE2117 /* GLiveLuxuryGiftViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D29E1E200DF71400DE2117 /* GLiveLuxuryGiftViewCtrl.m */; };
@@ -137,6 +148,10 @@
 		10D29E32200E2DA500DE2117 /* GLiveMp4RenderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D29E31200E2DA500DE2117 /* GLiveMp4RenderView.m */; };
 		10D698CA211C734D00D31F9E /* PicturePickerDemo.mm in Sources */ = {isa = PBXBuildFile; fileRef = 10D698C9211C734D00D31F9E /* PicturePickerDemo.mm */; };
 		10D698CD211C74BF00D31F9E /* LottieShowViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 10D698CC211C74BF00D31F9E /* LottieShowViewController.mm */; };
+		10E188A222155682008FDC96 /* DatePickerViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 10E188A122155682008FDC96 /* DatePickerViewCtrl.m */; };
+		10E188A5221557DF008FDC96 /* UIView+BTLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 10E188A3221557DE008FDC96 /* UIView+BTLayout.m */; };
+		10E188AA221558AB008FDC96 /* UIView+BTPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 10E188A6221558AB008FDC96 /* UIView+BTPosition.m */; };
+		10E188AB221558AB008FDC96 /* UIView+BTVFL.m in Sources */ = {isa = PBXBuildFile; fileRef = 10E188A8221558AB008FDC96 /* UIView+BTVFL.m */; };
 		10F510CC206148A0007E2EEE /* ODLongPressCloseLianmaiGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F510CB206148A0007E2EEE /* ODLongPressCloseLianmaiGuideView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		10F510CE206148CA007E2EEE /* ODCloseLianmaiGuideViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F510CD206148CA007E2EEE /* ODCloseLianmaiGuideViewCtrl.m */; };
 		6A618A9F1B72F46F0044FB1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A618A9E1B72F46F0044FB1F /* Foundation.framework */; };
@@ -194,6 +209,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1048267E221674C4009458D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1048267A221674C4009458D0 /* FalcoComponents.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8464A19021E48172003491FF;
+			remoteInfo = FalcoComponents;
+		};
+		10482684221674C9009458D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10482680221674C9009458D0 /* FalcoClassEngine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 10046D8221A6D48D0058FE5B;
+			remoteInfo = FalcoClassEngine;
+		};
+		10482686221674E0009458D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10482680221674C9009458D0 /* FalcoClassEngine.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 10046D8121A6D48D0058FE5B;
+			remoteInfo = FalcoClassEngine;
+		};
+		10482688221674E4009458D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1048267A221674C4009458D0 /* FalcoComponents.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8464A18F21E48172003491FF;
+			remoteInfo = FalcoComponents;
+		};
 		6A74B6501B68EE740042DDEC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6A74B62E1B68EE730042DDEC /* Project object */;
@@ -204,6 +247,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10005E6F2255BE9500C7E072 /* ODPopMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODPopMenuViewController.h; sourceTree = "<group>"; };
+		10005E702255BE9600C7E072 /* ODPopMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODPopMenuViewController.m; sourceTree = "<group>"; };
+		1003ADAB2254AD6C00032543 /* UIBubbleViewDemoCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBubbleViewDemoCtrl.h; sourceTree = "<group>"; };
+		1003ADAC2254AD6C00032543 /* UIBubbleViewDemoCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBubbleViewDemoCtrl.m; sourceTree = "<group>"; };
+		1003ADAE2254AF2300032543 /* ODPopBubbleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODPopBubbleViewController.h; sourceTree = "<group>"; };
+		1003ADAF2254AF2300032543 /* ODPopBubbleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODPopBubbleViewController.m; sourceTree = "<group>"; };
+		1003ADB12254AF5700032543 /* ODMenuArrowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODMenuArrowView.m; sourceTree = "<group>"; };
+		1003ADB22254AF5700032543 /* ODPopMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODPopMenuItem.h; sourceTree = "<group>"; };
+		1003ADB32254AF5700032543 /* ODPopMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODPopMenuItem.m; sourceTree = "<group>"; };
+		1003ADB42254AF5700032543 /* ODMenuArrowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODMenuArrowView.h; sourceTree = "<group>"; };
+		1003ADB72254B03C00032543 /* NSString+TextSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TextSize.h"; sourceTree = "<group>"; };
+		1003ADB82254B03D00032543 /* NSString+TextSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TextSize.m"; sourceTree = "<group>"; };
+		1003ADBD2254B26800032543 /* ODCommonUIDef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ODCommonUIDef.h; sourceTree = "<group>"; };
+		1003ADBE2254B40E00032543 /* ODPopoverPluginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODPopoverPluginViewController.h; sourceTree = "<group>"; };
+		1003ADBF2254B40E00032543 /* ODPopoverPluginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODPopoverPluginViewController.m; sourceTree = "<group>"; };
 		1009A7C520158B5A000F5730 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		100FAB98210F3A0C009CB90D /* PLActionSheetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLActionSheetView.m; sourceTree = "<group>"; };
 		100FAB99210F3A0C009CB90D /* PLActionSheetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLActionSheetView.h; sourceTree = "<group>"; };
@@ -243,7 +301,7 @@
 		1035AD61214FD9A100706C49 /* MatrixTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MatrixTools.h; path = OpenGLDemo/Demos/DemoMagicCuber/MatrixTools.h; sourceTree = SOURCE_ROOT; };
 		1035AD62214FD9A100706C49 /* MatrixTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MatrixTools.m; path = OpenGLDemo/Demos/DemoMagicCuber/MatrixTools.m; sourceTree = SOURCE_ROOT; };
 		103868A82155E08500E30644 /* aixin.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = aixin.mp4; sourceTree = "<group>"; };
-		103868A92155E0E800E30644 /* aixin.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = aixin.mp4; path = OpenGLDemo/Demos/luxuryGift/aixin.mp4; sourceTree = "<group>"; };
+		103868A92155E0E800E30644 /* aixin.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = aixin.mp4; sourceTree = "<group>"; };
 		1041581C212C0AE400E5BF9B /* UIImage+size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+size.h"; sourceTree = "<group>"; };
 		1041581D212C0AE400E5BF9B /* UIImage+labGrayImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+labGrayImage.m"; sourceTree = "<group>"; };
 		1041581E212C0AE400E5BF9B /* UIImage+labGrayImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+labGrayImage.h"; sourceTree = "<group>"; };
@@ -368,6 +426,13 @@
 		1041B84A2047ECC4000A5BA2 /* ODGiftH264ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODGiftH264ViewController.m; sourceTree = "<group>"; };
 		1041B9E1204F9B1B000A5BA2 /* ODFreeChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ODFreeChatViewController.h; path = OpenGLDemo/Demos/DemoCameraVideo/ODFreeChatViewController.h; sourceTree = SOURCE_ROOT; };
 		1041B9E2204F9B1B000A5BA2 /* ODFreeChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ODFreeChatViewController.m; path = OpenGLDemo/Demos/DemoCameraVideo/ODFreeChatViewController.m; sourceTree = SOURCE_ROOT; };
+		1048267A221674C4009458D0 /* FalcoComponents.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FalcoComponents.xcodeproj; path = FalcoComponents/FalcoComponents.xcodeproj; sourceTree = "<group>"; };
+		10482680221674C9009458D0 /* FalcoClassEngine.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FalcoClassEngine.xcodeproj; path = FalcoClassEngine/FalcoClassEngine.xcodeproj; sourceTree = "<group>"; };
+		1048268F221677EB009458D0 /* TLProgramModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLProgramModel.m; sourceTree = "<group>"; };
+		10482690221677EB009458D0 /* TLProgramModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLProgramModel.h; sourceTree = "<group>"; };
+		1048269222167862009458D0 /* CommonDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDefine.h; sourceTree = "<group>"; };
+		10482693221693C9009458D0 /* TLEditProgramDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLEditProgramDetailView.m; sourceTree = "<group>"; };
+		10482694221693C9009458D0 /* TLEditProgramDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLEditProgramDetailView.h; sourceTree = "<group>"; };
 		10643E5920230D0F003175FF /* GLiveGLUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLiveGLUtil.h; sourceTree = "<group>"; };
 		10643E5A20230D0F003175FF /* GLiveGLUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GLiveGLUtil.c; sourceTree = "<group>"; };
 		106D3BB5212701AF0065B745 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
@@ -399,16 +464,6 @@
 		10AA602620173ACA00C02084 /* GLiveGLShareInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLiveGLShareInstance.m; sourceTree = "<group>"; };
 		10AE30B221393EA800B4CB01 /* RotateCameraImageCuberViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotateCameraImageCuberViewCtrl.h; sourceTree = "<group>"; };
 		10AE30B321393EA800B4CB01 /* RotateCameraImageCuberViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotateCameraImageCuberViewCtrl.m; sourceTree = "<group>"; };
-		10AE30B82139408000B4CB01 /* TextureHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextureHelper.m; sourceTree = "<group>"; };
-		10AE30B92139408000B4CB01 /* TextureLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextureLoader.h; sourceTree = "<group>"; };
-		10AE30BA2139408000B4CB01 /* TextureLoader.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TextureLoader.mm; sourceTree = "<group>"; };
-		10AE30BB2139408000B4CB01 /* TextureHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextureHelper.h; sourceTree = "<group>"; };
-		10AE30BC2139408000B4CB01 /* GLESMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLESMath.h; sourceTree = "<group>"; };
-		10AE30BD2139408100B4CB01 /* Quaternion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quaternion.h; sourceTree = "<group>"; };
-		10AE30BE2139408100B4CB01 /* GLESUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLESUtils.h; sourceTree = "<group>"; };
-		10AE30BF2139408100B4CB01 /* GLESMath.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GLESMath.c; sourceTree = "<group>"; };
-		10AE30C02139408100B4CB01 /* GLESUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLESUtils.m; sourceTree = "<group>"; };
-		10AE30C12139408100B4CB01 /* Vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector.h; sourceTree = "<group>"; };
 		10AE30C62139429200B4CB01 /* CameraCuberGLESView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CameraCuberGLESView.mm; sourceTree = "<group>"; };
 		10AE30C72139429200B4CB01 /* CameraCuberGLESView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraCuberGLESView.h; sourceTree = "<group>"; };
 		10AE30CC2139433000B4CB01 /* ParametricSurface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParametricSurface.cpp; sourceTree = "<group>"; };
@@ -440,6 +495,19 @@
 		10C75D241EE6EF3D00EA51E9 /* OpenCameraGLESViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OpenCameraGLESViewCtrl.m; path = DemoCameraVideo/OpenCameraGLESViewCtrl.m; sourceTree = "<group>"; };
 		10C75D261EE7A8E400EA51E9 /* GLiveCameraManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLiveCameraManager.h; path = DemoCameraVideo/GLiveCameraManager.h; sourceTree = "<group>"; };
 		10C75D271EE7A8E400EA51E9 /* GLiveCameraManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GLiveCameraManager.mm; path = DemoCameraVideo/GLiveCameraManager.mm; sourceTree = "<group>"; };
+		10D14CE6215BB58A0022FE43 /* GLESMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLESMath.h; sourceTree = "<group>"; };
+		10D14CE7215BB58A0022FE43 /* Quaternion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quaternion.h; sourceTree = "<group>"; };
+		10D14CE8215BB58A0022FE43 /* GLESUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLESUtils.m; sourceTree = "<group>"; };
+		10D14CE9215BB58A0022FE43 /* TextureLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextureLoader.h; sourceTree = "<group>"; };
+		10D14CEA215BB58A0022FE43 /* GLESUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLESUtils.h; sourceTree = "<group>"; };
+		10D14CEB215BB58A0022FE43 /* TextureHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextureHelper.m; sourceTree = "<group>"; };
+		10D14CEC215BB58A0022FE43 /* Vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector.h; sourceTree = "<group>"; };
+		10D14CED215BB58A0022FE43 /* GLESMath.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GLESMath.c; sourceTree = "<group>"; };
+		10D14CEE215BB58A0022FE43 /* TextureHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextureHelper.h; sourceTree = "<group>"; };
+		10D14CEF215BB58A0022FE43 /* TextureLoader.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TextureLoader.mm; sourceTree = "<group>"; };
+		10D14D36215E684B0022FE43 /* momoda.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = momoda.mp4; sourceTree = "<group>"; };
+		10D14D37215E68730022FE43 /* momoda.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = momoda.mp4; sourceTree = "<group>"; };
+		10D14D3B215F296F0022FE43 /* lihua.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = lihua.mp4; path = OpenGLDemo/Demos/luxuryGift/lihua.mp4; sourceTree = "<group>"; };
 		10D18A421FF37CBA00307012 /* testword.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testword.png; sourceTree = "<group>"; };
 		10D29E1A200DF61000DE2117 /* GiftPlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiftPlayView.h; sourceTree = "<group>"; };
 		10D29E1B200DF61000DE2117 /* GiftPlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiftPlayView.m; sourceTree = "<group>"; };
@@ -458,6 +526,14 @@
 		10D698C9211C734D00D31F9E /* PicturePickerDemo.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PicturePickerDemo.mm; sourceTree = "<group>"; };
 		10D698CB211C74BE00D31F9E /* LottieShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LottieShowViewController.h; sourceTree = "<group>"; };
 		10D698CC211C74BF00D31F9E /* LottieShowViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LottieShowViewController.mm; sourceTree = "<group>"; };
+		10E188A022155682008FDC96 /* DatePickerViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickerViewCtrl.h; sourceTree = "<group>"; };
+		10E188A122155682008FDC96 /* DatePickerViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerViewCtrl.m; sourceTree = "<group>"; };
+		10E188A3221557DE008FDC96 /* UIView+BTLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BTLayout.m"; sourceTree = "<group>"; };
+		10E188A4221557DF008FDC96 /* UIView+BTLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BTLayout.h"; sourceTree = "<group>"; };
+		10E188A6221558AB008FDC96 /* UIView+BTPosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BTPosition.m"; sourceTree = "<group>"; };
+		10E188A7221558AB008FDC96 /* UIView+BTPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BTPosition.h"; sourceTree = "<group>"; };
+		10E188A8221558AB008FDC96 /* UIView+BTVFL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BTVFL.m"; sourceTree = "<group>"; };
+		10E188A9221558AB008FDC96 /* UIView+BTVFL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BTVFL.h"; sourceTree = "<group>"; };
 		10F510C720614807007E2EEE /* ODCloseLianmaiGuideViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ODCloseLianmaiGuideViewCtrl.h; path = OpenGLDemo/Demos/DemoTableViewDemo/ODCloseLianmaiGuideViewCtrl.h; sourceTree = SOURCE_ROOT; };
 		10F510CA206148A0007E2EEE /* ODLongPressCloseLianmaiGuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODLongPressCloseLianmaiGuideView.h; sourceTree = "<group>"; };
 		10F510CB206148A0007E2EEE /* ODLongPressCloseLianmaiGuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODLongPressCloseLianmaiGuideView.m; sourceTree = "<group>"; };
@@ -541,8 +617,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10415872212C4F9600E5BF9B /* MetalPerformanceShaders.framework in Frameworks */,
-				10415870212C4EC500E5BF9B /* ARKit.framework in Frameworks */,
+				1048268A221674EB009458D0 /* libFalcoClassEngine.a in Frameworks */,
+				1048268B221674EB009458D0 /* libFalcoComponents.a in Frameworks */,
 				106D3BB8212701B70065B745 /* libiconv.2.4.0.tbd in Frameworks */,
 				106D3BB6212701AF0065B745 /* libicucore.tbd in Frameworks */,
 				6A618AA31B72F47B0044FB1F /* CoreGraphics.framework in Frameworks */,
@@ -564,6 +640,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1003ADAA2254AD6C00032543 /* DemoBubbleView */ = {
+			isa = PBXGroup;
+			children = (
+				10005E6F2255BE9500C7E072 /* ODPopMenuViewController.h */,
+				10005E702255BE9600C7E072 /* ODPopMenuViewController.m */,
+				1003ADBE2254B40E00032543 /* ODPopoverPluginViewController.h */,
+				1003ADBF2254B40E00032543 /* ODPopoverPluginViewController.m */,
+				1003ADB42254AF5700032543 /* ODMenuArrowView.h */,
+				1003ADB12254AF5700032543 /* ODMenuArrowView.m */,
+				1003ADB22254AF5700032543 /* ODPopMenuItem.h */,
+				1003ADB32254AF5700032543 /* ODPopMenuItem.m */,
+				1003ADAE2254AF2300032543 /* ODPopBubbleViewController.h */,
+				1003ADAF2254AF2300032543 /* ODPopBubbleViewController.m */,
+				1003ADAB2254AD6C00032543 /* UIBubbleViewDemoCtrl.h */,
+				1003ADAC2254AD6C00032543 /* UIBubbleViewDemoCtrl.m */,
+			);
+			name = DemoBubbleView;
+			path = Demos/DemoBubbleView;
+			sourceTree = "<group>";
+		};
 		100FAB90210F0BB1009CB90D /* DemoImagePicker */ = {
 			isa = PBXGroup;
 			children = (
@@ -576,6 +672,7 @@
 		100FAB94210F39BD009CB90D /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				10D14CE5215BB50E0022FE43 /* GLESUtil */,
 				10415822212C0C8F00E5BF9B /* Public */,
 				1041581B212C0ABD00E5BF9B /* UIImage */,
 				100FABB22111B60A009CB90D /* UIColor */,
@@ -598,6 +695,9 @@
 		100FAB9C210F3D47009CB90D /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				1003ADBD2254B26800032543 /* ODCommonUIDef.h */,
+				1003ADB72254B03C00032543 /* NSString+TextSize.h */,
+				1003ADB82254B03D00032543 /* NSString+TextSize.m */,
 				100FABA3210F3F46009CB90D /* CommonUIDefine.h */,
 				100FABA1210F3DAD009CB90D /* UIDevice+Hardware.h */,
 				100FABA0210F3DAD009CB90D /* UIDevice+Hardware.m */,
@@ -881,6 +981,22 @@
 			path = Private;
 			sourceTree = "<group>";
 		};
+		1048267B221674C4009458D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1048267F221674C4009458D0 /* libFalcoComponents.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		10482681221674C9009458D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				10482685221674C9009458D0 /* libFalcoClassEngine.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		106D3BAC2126FA4B0065B745 /* ThirdLib */ = {
 			isa = PBXGroup;
 			children = (
@@ -951,30 +1067,12 @@
 				10AE30D621394A2000B4CB01 /* VertexCuber.glsl */,
 				10AE30D3213943E300B4CB01 /* PowerVR */,
 				10AE30CB2139431B00B4CB01 /* Surface */,
-				10AE30B72139406800B4CB01 /* Utils */,
 				10AE30C72139429200B4CB01 /* CameraCuberGLESView.h */,
 				10AE30C62139429200B4CB01 /* CameraCuberGLESView.mm */,
 				10AE30B221393EA800B4CB01 /* RotateCameraImageCuberViewCtrl.h */,
 				10AE30B321393EA800B4CB01 /* RotateCameraImageCuberViewCtrl.m */,
 			);
 			path = DemoCameraCuber;
-			sourceTree = "<group>";
-		};
-		10AE30B72139406800B4CB01 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				10AE30BF2139408100B4CB01 /* GLESMath.c */,
-				10AE30BC2139408000B4CB01 /* GLESMath.h */,
-				10AE30BE2139408100B4CB01 /* GLESUtils.h */,
-				10AE30C02139408100B4CB01 /* GLESUtils.m */,
-				10AE30BD2139408100B4CB01 /* Quaternion.h */,
-				10AE30BB2139408000B4CB01 /* TextureHelper.h */,
-				10AE30B82139408000B4CB01 /* TextureHelper.m */,
-				10AE30B92139408000B4CB01 /* TextureLoader.h */,
-				10AE30BA2139408000B4CB01 /* TextureLoader.mm */,
-				10AE30C12139408100B4CB01 /* Vector.h */,
-			);
-			path = Utils;
 			sourceTree = "<group>";
 		};
 		10AE30CB2139431B00B4CB01 /* Surface */ = {
@@ -1055,9 +1153,29 @@
 			name = DemoCameraVideo;
 			sourceTree = "<group>";
 		};
+		10D14CE5215BB50E0022FE43 /* GLESUtil */ = {
+			isa = PBXGroup;
+			children = (
+				10D14CED215BB58A0022FE43 /* GLESMath.c */,
+				10D14CE6215BB58A0022FE43 /* GLESMath.h */,
+				10D14CEA215BB58A0022FE43 /* GLESUtils.h */,
+				10D14CE8215BB58A0022FE43 /* GLESUtils.m */,
+				10D14CE7215BB58A0022FE43 /* Quaternion.h */,
+				10D14CEE215BB58A0022FE43 /* TextureHelper.h */,
+				10D14CEB215BB58A0022FE43 /* TextureHelper.m */,
+				10D14CE9215BB58A0022FE43 /* TextureLoader.h */,
+				10D14CEF215BB58A0022FE43 /* TextureLoader.mm */,
+				10D14CEC215BB58A0022FE43 /* Vector.h */,
+			);
+			path = GLESUtil;
+			sourceTree = "<group>";
+		};
 		10D29E16200DF5B300DE2117 /* luxuryGift */ = {
 			isa = PBXGroup;
 			children = (
+				10D14D37215E68730022FE43 /* momoda.mp4 */,
+				103868A92155E0E800E30644 /* aixin.mp4 */,
+				10D14D36215E684B0022FE43 /* momoda.mp4 */,
 				103868A82155E08500E30644 /* aixin.mp4 */,
 				1041B8492047ECC4000A5BA2 /* ODGiftH264ViewController.h */,
 				1041B84A2047ECC4000A5BA2 /* ODGiftH264ViewController.m */,
@@ -1079,6 +1197,26 @@
 			path = luxuryGift;
 			sourceTree = "<group>";
 		};
+		10E1889F22155609008FDC96 /* DatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				10482694221693C9009458D0 /* TLEditProgramDetailView.h */,
+				10482693221693C9009458D0 /* TLEditProgramDetailView.m */,
+				1048269222167862009458D0 /* CommonDefine.h */,
+				10482690221677EB009458D0 /* TLProgramModel.h */,
+				1048268F221677EB009458D0 /* TLProgramModel.m */,
+				10E188A7221558AB008FDC96 /* UIView+BTPosition.h */,
+				10E188A6221558AB008FDC96 /* UIView+BTPosition.m */,
+				10E188A9221558AB008FDC96 /* UIView+BTVFL.h */,
+				10E188A8221558AB008FDC96 /* UIView+BTVFL.m */,
+				10E188A4221557DF008FDC96 /* UIView+BTLayout.h */,
+				10E188A3221557DE008FDC96 /* UIView+BTLayout.m */,
+				10E188A022155682008FDC96 /* DatePickerViewCtrl.h */,
+				10E188A122155682008FDC96 /* DatePickerViewCtrl.m */,
+			);
+			path = DatePicker;
+			sourceTree = "<group>";
+		};
 		6A618AAA1B736DF10044FB1F /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -1089,7 +1227,9 @@
 		6A74B62D1B68EE730042DDEC = {
 			isa = PBXGroup;
 			children = (
-				103868A92155E0E800E30644 /* aixin.mp4 */,
+				10482680221674C9009458D0 /* FalcoClassEngine.xcodeproj */,
+				1048267A221674C4009458D0 /* FalcoComponents.xcodeproj */,
+				10D14D3B215F296F0022FE43 /* lihua.mp4 */,
 				100FABAA2111B13D009CB90D /* localizable.strings */,
 				106D3BAC2126FA4B0065B745 /* ThirdLib */,
 				100FAB94210F39BD009CB90D /* Common */,
@@ -1112,6 +1252,7 @@
 		6A74B6381B68EE740042DDEC /* OpenGLDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1003ADAA2254AD6C00032543 /* DemoBubbleView */,
 				A4FC713D1C32630800EA3EBD /* Demos */,
 				A4FC71871C3264D300EA3EBD /* ViewControllers */,
 				6A618AAA1B736DF10044FB1F /* Models */,
@@ -1231,6 +1372,7 @@
 		A4FC713D1C32630800EA3EBD /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				10E1889F22155609008FDC96 /* DatePicker */,
 				10AE30DA213963C600B4CB01 /* CS.png */,
 				10AE30DC213963C600B4CB01 /* flower.jpg */,
 				10AE30DB213963C600B4CB01 /* wooden.png */,
@@ -1336,6 +1478,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				10482689221674E4009458D0 /* PBXTargetDependency */,
+				10482687221674E0009458D0 /* PBXTargetDependency */,
 			);
 			name = OpenGLDemo;
 			productName = OpenGLDemo;
@@ -1371,8 +1515,8 @@
 				TargetAttributes = {
 					6A74B6351B68EE730042DDEC = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = NH5788MG66;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 67TN4M5XM5;
+						ProvisioningStyle = Manual;
 					};
 					6A74B64E1B68EE740042DDEC = {
 						CreatedOnToolsVersion = 6.4;
@@ -1391,6 +1535,16 @@
 			mainGroup = 6A74B62D1B68EE730042DDEC;
 			productRefGroup = 6A74B6371B68EE740042DDEC /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 10482681221674C9009458D0 /* Products */;
+					ProjectRef = 10482680221674C9009458D0 /* FalcoClassEngine.xcodeproj */;
+				},
+				{
+					ProductGroup = 1048267B221674C4009458D0 /* Products */;
+					ProjectRef = 1048267A221674C4009458D0 /* FalcoComponents.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				6A74B6351B68EE730042DDEC /* OpenGLDemo */,
@@ -1399,11 +1553,30 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		1048267F221674C4009458D0 /* libFalcoComponents.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFalcoComponents.a;
+			remoteRef = 1048267E221674C4009458D0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		10482685221674C9009458D0 /* libFalcoClassEngine.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFalcoClassEngine.a;
+			remoteRef = 10482684221674C9009458D0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		6A74B6341B68EE730042DDEC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10D14D38215E68740022FE43 /* momoda.mp4 in Resources */,
+				10D14D3C215F296F0022FE43 /* lihua.mp4 in Resources */,
 				103868AA2155E0E800E30644 /* aixin.mp4 in Resources */,
 				1009A7C620158B63000F5730 /* 1.jpg in Resources */,
 				10D29E2A200E23A500DE2117 /* huojian_zuoyou.mp4 in Resources */,
@@ -1482,11 +1655,14 @@
 				A4FC71821C3263FB00EA3EBD /* TouchDrawViewViaOpenGLES.m in Sources */,
 				1041B83B2047E73F000A5BA2 /* LOTGradientFillRender.m in Sources */,
 				1035AD63214FD9A200706C49 /* MatrixTools.m in Sources */,
+				1003ADC02254B40E00032543 /* ODPopoverPluginViewController.m in Sources */,
 				108B85D01FCEE47C00BDD687 /* GLiveThreadLogger.m in Sources */,
+				10D14CF2215BB58A0022FE43 /* GLESMath.c in Sources */,
 				10F510CC206148A0007E2EEE /* ODLongPressCloseLianmaiGuideView.m in Sources */,
 				1041B84B2047ECC4000A5BA2 /* ODGiftH264ViewController.m in Sources */,
 				A40DAA611CA5082100E2D5C0 /* ViewDrawImageCoreGraphics.m in Sources */,
 				1035AD56214FD1D400706C49 /* YHCOpenGLProgram.m in Sources */,
+				1003ADB02254AF2300032543 /* ODPopBubbleViewController.m in Sources */,
 				10C75D1E1EE6ECA500EA51E9 /* OpenCameraGLESView.m in Sources */,
 				1041B8322047E73F000A5BA2 /* LOTPathInterpolator.m in Sources */,
 				1041B8312047E73F000A5BA2 /* LOTNumberInterpolator.m in Sources */,
@@ -1498,6 +1674,7 @@
 				A4FC717F1C3263FB00EA3EBD /* PaintViaGLKView.m in Sources */,
 				100FABA2210F3DAD009CB90D /* UIDevice+Hardware.m in Sources */,
 				1041B8352047E73F000A5BA2 /* LOTTransformInterpolator.m in Sources */,
+				10E188A5221557DF008FDC96 /* UIView+BTLayout.m in Sources */,
 				1041B8442047E73F000A5BA2 /* LOTAnimationTransitionController.m in Sources */,
 				1041B81D2047E73F000A5BA2 /* LOTShapePath.m in Sources */,
 				1035AD57214FD1D400706C49 /* YHCOpenGLTools.m in Sources */,
@@ -1511,20 +1688,26 @@
 				1035AD50214FD0E300706C49 /* YHCFontImporter.m in Sources */,
 				108B85D11FCEE47C00BDD687 /* GLiveCPUMonitor.m in Sources */,
 				1041B8222047E73F000A5BA2 /* LOTShapeTransform.m in Sources */,
+				10E188AB221558AB008FDC96 /* UIView+BTVFL.m in Sources */,
 				A4FC718D1C3264D300EA3EBD /* RootTableViewController.m in Sources */,
+				10D14CF1215BB58A0022FE43 /* TextureHelper.m in Sources */,
 				10643E5B20230D0F003175FF /* GLiveGLUtil.c in Sources */,
 				10AE30D22139433000B4CB01 /* DrawableVBOFactory.mm in Sources */,
-				10AE30C52139408100B4CB01 /* GLESUtils.m in Sources */,
 				1041B8362047E73F000A5BA2 /* LOTValueInterpolator.m in Sources */,
+				10005E712255BE9600C7E072 /* ODPopMenuViewController.m in Sources */,
 				A4FC71811C3263FB00EA3EBD /* TouchDrawViewViaCoreGraphics.m in Sources */,
 				A40DAA4F1CA3CE5000E2D5C0 /* DemoDrawImageCoreGraphics.m in Sources */,
+				1003ADB62254AF5800032543 /* ODPopMenuItem.m in Sources */,
 				A4FC718C1C3264D300EA3EBD /* ItemViewController.m in Sources */,
 				10C75D1B1EE6EC2300EA51E9 /* GLTexture.m in Sources */,
 				100FABB02111B4CF009CB90D /* PLCropView.m in Sources */,
 				1035AD47214FAF4700706C49 /* Cube.m in Sources */,
+				1003ADAD2254AD6C00032543 /* UIBubbleViewDemoCtrl.m in Sources */,
 				100FAB9F210F3D6D009CB90D /* PLUtilUIScreen.m in Sources */,
 				10D698CD211C74BF00D31F9E /* LottieShowViewController.mm in Sources */,
+				1003ADB92254B03D00032543 /* NSString+TextSize.m in Sources */,
 				A4FC71861C32641400EA3EBD /* ShaderOperations.m in Sources */,
+				10E188A222155682008FDC96 /* DatePickerViewCtrl.m in Sources */,
 				1041B8412047E73F000A5BA2 /* LOTLayerContainer.m in Sources */,
 				100FABB12111B4CF009CB90D /* PLCropViewController.m in Sources */,
 				1041B8422047E73F000A5BA2 /* LOTMaskContainer.m in Sources */,
@@ -1551,10 +1734,12 @@
 				1041B8302047E73F000A5BA2 /* LOTColorInterpolator.m in Sources */,
 				1041B82E2047E73F000A5BA2 /* LOTRoundedRectAnimator.m in Sources */,
 				10D29E29200DF8B600DE2117 /* GPWeakSelectorTarget.m in Sources */,
+				1003ADB52254AF5800032543 /* ODMenuArrowView.m in Sources */,
 				1041B83F2047E73F000A5BA2 /* LOTCompositionContainer.m in Sources */,
 				1041B8382047E73F000A5BA2 /* LOTRenderNode.m in Sources */,
 				1041B82A2047E73F000A5BA2 /* LOTCircleAnimator.m in Sources */,
 				10915EA41EFE92830013C5D2 /* GLiveMiniMempool.mm in Sources */,
+				10482691221677EB009458D0 /* TLProgramModel.m in Sources */,
 				1041B8242047E73F000A5BA2 /* CGGeometry+LOTAdditions.m in Sources */,
 				1041B81F2047E73F000A5BA2 /* LOTShapeRepeater.m in Sources */,
 				10C75D281EE7A8E400EA51E9 /* GLiveCameraManager.mm in Sources */,
@@ -1564,23 +1749,23 @@
 				1041B8172047E73F000A5BA2 /* LOTLayerGroup.m in Sources */,
 				6A74B63F1B68EE740042DDEC /* AppDelegate.m in Sources */,
 				1041B82F2047E73F000A5BA2 /* LOTArrayInterpolator.m in Sources */,
-				10AE30C42139408100B4CB01 /* GLESMath.c in Sources */,
-				10AE30C32139408100B4CB01 /* TextureLoader.mm in Sources */,
 				10D29E20200DF71400DE2117 /* GLiveLuxuryGiftViewCtrl.m in Sources */,
 				A40DAA511CA3CE5000E2D5C0 /* DemoShaderViewController.m in Sources */,
 				10415828212C0CB500E5BF9B /* UIScreenEx.mm in Sources */,
-				10AE30C22139408100B4CB01 /* TextureHelper.m in Sources */,
 				1035AD5D214FD20C00706C49 /* YHCShaderUniform.m in Sources */,
 				6A74B63C1B68EE740042DDEC /* main.m in Sources */,
 				1041B81B2047E73F000A5BA2 /* LOTShapeGradientFill.m in Sources */,
 				1041B8272047E73F000A5BA2 /* UIColor+Expanded.m in Sources */,
 				1041B8402047E73F000A5BA2 /* LOTLayerContainer+VASPoke.m in Sources */,
+				10D14CF3215BB58A0022FE43 /* TextureLoader.mm in Sources */,
 				10C75D101EE6E8DF00EA51E9 /* GLRender.m in Sources */,
 				1041B8392047E73F000A5BA2 /* LOTTrimPathNode.m in Sources */,
+				10482695221693C9009458D0 /* TLEditProgramDetailView.m in Sources */,
 				1041B8372047E73F000A5BA2 /* LOTAnimatorNode.m in Sources */,
 				1041B81E2047E73F000A5BA2 /* LOTShapeRectangle.m in Sources */,
 				1041B8152047E73F000A5BA2 /* LOTAssetGroup.m in Sources */,
 				1035AD5C214FD20C00706C49 /* YHCShaderAttribute.m in Sources */,
+				10D14CF0215BB58A0022FE43 /* GLESUtils.m in Sources */,
 				1041B82D2047E73F000A5BA2 /* LOTPolystarAnimator.m in Sources */,
 				108A8717214F960B00E0B997 /* EAGLView.m in Sources */,
 				10D29E1C200DF61000DE2117 /* GiftPlayView.m in Sources */,
@@ -1594,6 +1779,7 @@
 				1076029C1FC2808600484F08 /* ODMessage.m in Sources */,
 				1041B8432047E73F000A5BA2 /* LOTAnimationCache.m in Sources */,
 				10C75D251EE6EF3D00EA51E9 /* OpenCameraGLESViewCtrl.m in Sources */,
+				10E188AA221558AB008FDC96 /* UIView+BTPosition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1608,6 +1794,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		10482687221674E0009458D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FalcoClassEngine;
+			targetProxy = 10482686221674E0009458D0 /* PBXContainerItemProxy */;
+		};
+		10482689221674E4009458D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FalcoComponents;
+			targetProxy = 10482688221674E4009458D0 /* PBXContainerItemProxy */;
+		};
 		6A74B6511B68EE740042DDEC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 6A74B6351B68EE730042DDEC /* OpenGLDemo */;
@@ -1739,13 +1935,17 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NH5788MG66;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 67TN4M5XM5;
 				ENABLE_BITCODE = NO;
 				GCC_ENABLE_CPP_EXCEPTIONS = YES;
 				GCC_ENABLE_CPP_RTTI = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/FalcoClassEngine/include",
+					"$(PROJECT_DIR)/FalcoComponents/include",
+				);
 				INFOPLIST_FILE = OpenGLDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1755,7 +1955,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.applechangD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = 20191123;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64 armv7 armv7";
 			};
@@ -1769,13 +1969,17 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NH5788MG66;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				GCC_ENABLE_CPP_EXCEPTIONS = YES;
 				GCC_ENABLE_CPP_RTTI = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/FalcoClassEngine/include",
+					"$(PROJECT_DIR)/FalcoComponents/include",
+				);
 				INFOPLIST_FILE = OpenGLDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1875,13 +2079,17 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NH5788MG66;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				GCC_ENABLE_CPP_EXCEPTIONS = YES;
 				GCC_ENABLE_CPP_RTTI = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/FalcoClassEngine/include",
+					"$(PROJECT_DIR)/FalcoComponents/include",
+				);
 				INFOPLIST_FILE = OpenGLDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

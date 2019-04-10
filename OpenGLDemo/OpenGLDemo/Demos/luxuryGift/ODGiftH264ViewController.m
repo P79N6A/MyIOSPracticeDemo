@@ -105,8 +105,12 @@
     self.view.backgroundColor = [UIColor clearColor];
     
     //by applechang test
+//    int height = SCREEN_HEIGHT;
+//    int width = height*1.0*9/16;
+//    int x = 0;
+//    int y = 0;
     int height = SCREEN_HEIGHT;
-    int width = height*1.0*9/16;
+    int width = SCREEN_WIDTH;
     int x = 0;
     int y = 0;
     CGRect rc = CGRectMake(x, y, width, height);

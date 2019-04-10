@@ -10,6 +10,6 @@ uniform mat3 rotateZMatrix;
 uniform mat3 scaleMatrix;
 void main()
 {
-    gl_Position = vec4(rotateXMatrix*rotateYMatrix*rotateZMatrix*position, 1.0);
+    gl_Position = vec4(rotateXMatrix*rotateYMatrix*rotateZMatrix*position,1.0);
     v_texcoord = texcoord;
 }

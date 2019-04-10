@@ -37,12 +37,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self displayOriginImage];
+    //[self displayOriginImage];
     
     //_frameCAEAGLLayer = CGRectMake(10, 340, self.view.frame.size.width - 20, 200);
     //[self setupForOpenGLES];
     //[self didDrawImageViaOpenGLES:_originImage];
-    _frameCAEAGLLayer = CGRectMake(10, 340, 200, 200);
+    _frameCAEAGLLayer = CGRectMake(10, 150, 300, 500);
     // 使用View
     _viewDrawImage = [[ViewDrawImageOpenGLES alloc] initWithFrame:_frameCAEAGLLayer];
     //[_viewDrawImage didDrawImageViaOpenGLES:_originImage];

@@ -181,6 +181,10 @@ static void mat4f_LoadOrtho(float left, float right, float bottom, float top, fl
     dispatch_queue_t    _renderQueue;
     CVPixelBufferRef    _lastImage;
     struct SwsContext               *_swsContext;
+
+    CGRect                 _rcViewport;
+    CGSize                 _videoFrameSize;
+    CGSize                 _viewSize;
 }
 
 enum {
@@ -199,6 +203,7 @@ static int g_ijk_gles_queue_spec_key;
 {
     self = [super initWithFrame:frame];
     if (self) {
+        self.needAlignCenterClamp = NO;
         _tryLockErrorCount = 0;
         _frameChroma = FCC__VTB;
         self.glActiveLock = [[NSRecursiveLock alloc] init];
@@ -414,18 +419,93 @@ static int g_ijk_gles_queue_spec_key;
 - (void)layoutSubviews
 {
     [super layoutSubviews];
-
-    CGRect selfFrame = self.frame;
-    CGRect newFrame  = selfFrame;
-
-    newFrame.size.width   = selfFrame.size.width * 1 / 3;
-    newFrame.origin.x     = selfFrame.size.width * 2 / 3;
-
-    newFrame.size.height  = selfFrame.size.height * 6 / 8;
-    newFrame.origin.y    += selfFrame.size.height * 1 / 8;
-
-    
     _didRelayoutSubViews = YES;
+    CGSize newFrameSize = self.frame.size;
+    if (newFrameSize.height != _viewSize.height ||
+        newFrameSize.width != _viewSize.width) {
+        _viewSize = newFrameSize;
+        CGSize tempVideoFrameSize = _videoFrameSize;
+
+        _rcViewport = [self calculateViewPortRect:_viewSize withImageSize:tempVideoFrameSize];
+        NSLog(@"layoutSubviews: _rcViewport x=%0.2f, y=%0.2f, w=%0.2f, h=%0.2f", _rcViewport.origin.x, _rcViewport.origin.y, _rcViewport.size.width, _rcViewport.size.height);
+        
+    }
+}
+
+-(CGRect)calculateViewPortRect: (CGSize)viewSize
+                 withImageSize:(CGSize)imageSize
+{
+    CGRect rcViewPort;
+    rcViewPort.origin.x = 0;
+    rcViewPort.origin.y = 0;
+    rcViewPort.size = viewSize;
+    
+    if (imageSize.height == 0 || imageSize.width == 0 ||
+        viewSize.height == 0  || viewSize.width == 0)
+    {
+        return rcViewPort;
+    }
+    
+    CGFloat wDiff = viewSize.width - imageSize.width;
+    CGFloat hDiff = viewSize.height - imageSize.height;
+    
+    CGFloat ratioWH = imageSize.width / imageSize.height;
+    CGFloat ratioHW = imageSize.height / imageSize.width;
+    
+    CGFloat wIncX = fabs(ratioWH*hDiff);
+    //CGFloat hIncY = fabs(ratioHW*wDiff);
+    
+    if(1)
+    {
+        //相机视频
+        if (wDiff > 0 || hDiff > 0)
+        {
+            //需要拉伸
+            if ((hDiff > 0) && (wDiff < 0)) {
+                rcViewPort.size.height = viewSize.height;
+                rcViewPort.size.width  = rcViewPort.size.height*ratioWH;
+            }else if((wDiff > 0 ) && (hDiff < 0))
+            {
+                rcViewPort.size.width = viewSize.width;
+                rcViewPort.size.height = rcViewPort.size.width*ratioHW;
+            }else if((wDiff > 0) && (hDiff > 0))
+            {
+                if (wIncX > wDiff) {
+                    //优先填满H方向
+                    rcViewPort.size.height = viewSize.height;
+                    rcViewPort.size.width = rcViewPort.size.height*ratioWH;
+                }else{
+                    //优先填满W方向
+                    rcViewPort.size.width = viewSize.width;
+                    rcViewPort.size.height= rcViewPort.size.width*ratioHW;
+                }
+            }
+        }else if((wDiff == 0) && (hDiff == 0)){
+            //do nothing
+        }else if((wDiff < 0) && (hDiff < 0)){
+            //需要压缩
+            wDiff = -wDiff;
+            hDiff = -hDiff;
+            if (imageSize.width - wIncX > viewSize.width ) {
+                //以H作压缩参考
+                rcViewPort.size.height = viewSize.height;
+                rcViewPort.size.width = rcViewPort.size.height*ratioWH;
+            }else{
+                //以W作压缩参考
+                rcViewPort.size.width = viewSize.width;
+                rcViewPort.size.height = rcViewPort.size.width*ratioHW;
+            }
+        }
+        
+        //让viewport居中
+        CGFloat originxoffset = (rcViewPort.size.width - viewSize.width)/2;
+        CGFloat originyoffset = (rcViewPort.size.height - viewSize.height)/2;
+        
+        rcViewPort.origin.x = -originxoffset;
+        rcViewPort.origin.y = -originyoffset;
+        return rcViewPort;
+    }    
+    return rcViewPort;
 }
 
 - (void)layoutOnDisplayThread
@@ -493,6 +573,10 @@ static int g_ijk_gles_queue_spec_key;
             _frameHeight != frameHeight ) {
             _frameWidth  = frameWidth;
             _frameHeight = frameHeight;
+            _videoFrameSize.height = frameHeight;
+            _videoFrameSize.width = frameWidth/2;
+            CGSize tempVideoFrameSize = _videoFrameSize;
+            _rcViewport = [self calculateViewPortRect:_viewSize withImageSize:tempVideoFrameSize];
             _didVerticesChanged = YES;
          }
 
@@ -744,7 +828,14 @@ exit:
     }
 
     glBindFramebuffer(GL_FRAMEBUFFER, _framebuffer);
-    glViewport(0, 0, _backingWidth, _backingHeight);
+    
+    if (self.needAlignCenterClamp == YES) {
+        glViewport(_rcViewport.origin.x * _scaleFactor, _rcViewport.origin.y*_scaleFactor,
+                   _rcViewport.size.width*_scaleFactor, _rcViewport.size.height*_scaleFactor);
+    }else{
+        glViewport(0, 0, _backingWidth, _backingHeight);
+    }
+    
     glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
 	glUseProgram(_program);

@@ -230,6 +230,13 @@ BOOL hasPrefixString(NSString * aString , NSString *bString)
     if (compareString(platform, @"iPhone10,2") || compareString(platform, @"iPhone10,5"))   return UIDevice8Plus;
     if (compareString(platform, @"iPhone10,3") || compareString(platform, @"iPhone10,6"))   return UIDeviceXiPhone;
     
+    //新增iPhone
+    if (compareString(platform,@"iPhone11,1"))            return UIDeviceXiPhone;//return UIDevice9iPhone;
+    if (compareString(platform,@"iPhone11,2"))            return UIDeviceXiPhone;//return UIDeviceXSiPhone;
+    if (compareString(platform,@"iPhone11,3"))            return UIDeviceXiPhone;//return UIDeviceXPiPhone;
+    
+    if (compareString(platform,@"iPhone11"))            return UIDeviceXiPhone;//return UIDeviceXPiPhone;
+    
     // iPod
     if (hasPrefixString(platform,@"iPod1"))              return UIDevice1GiPod;
     if (hasPrefixString(platform,@"iPod2"))              return UIDevice2GiPod;

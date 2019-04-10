@@ -8,6 +8,7 @@
 
 #import "ViewDrawImageOpenGLES.h"
 #import "ShaderOperations.h"
+#import "GLESMath.h"
 
 @implementation ViewDrawImageOpenGLES {
 
@@ -20,13 +21,18 @@
     GLuint _glProgram;
     GLuint _positionSlot; // 顶点
     GLuint _textureSlot;  // 纹理
-    GLuint _textureCoordsSlot; // 纹理坐标
+    GLuint _textureCoordsSlot; // 纹理坐
+    GLuint _projectMatrixSlot; // 投射矩阵
+    KSMatrix4       _projectionMatrix;
+    GLuint _viewTransformMatrixSlot; // 投射矩阵slot
+    KSMatrix4       _viewTransformMatrix;
     
     GLuint _textureID; // 纹理ID
     
     CGRect          _rcViewport;
     CGSize          _videoFrameSize;
     CGSize          _viewSize;
+
 }
 
 - (instancetype)initWithFrame:(CGRect)frame
@@ -57,11 +63,12 @@
     glClear(GL_COLOR_BUFFER_BIT);
     
     CGSize szFrame = self.frame.size;
-    _rcViewport = [self calculateViewPortRect:szFrame withImageSize:_videoFrameSize withVideoSrcType:GLIVE_VIDEO_SRC_TYPE_SCREEN];
-    //UIScreen scale
-    //CGFloat scale = [[UIScreen mainScreen] scale];
+    CGRect szFrameSize = self.frame;
+//    _rcViewport = [self calculateViewPortRect:szFrame withImageSize:_videoFrameSize withVideoSrcType:GLIVE_VIDEO_SRC_TYPE_SCREEN];
 //    glViewport(scale*_rcViewport.origin.x, scale*_rcViewport.origin.y, scale*_rcViewport.size.width, scale*_rcViewport.size.height);
-    glViewport(_rcViewport.origin.x, _rcViewport.origin.y, _rcViewport.size.width, _rcViewport.size.height);
+    
+    CGFloat scale = [[UIScreen mainScreen] scale];
+    glViewport(0, 0, szFrame.width*scale, szFrame.height*scale);
 
     [self setupBlendMode];
     
@@ -235,7 +242,7 @@
     
     glGenRenderbuffers(1, &_colorRenderBuffer);
     glBindRenderbuffer(GL_RENDERBUFFER, _colorRenderBuffer);
-    self.layer.contentsScale = 1;
+    //self.layer.contentsScale = [[UIScreen mainScreen] scale];
     [_eaglContext renderbufferStorage:GL_RENDERBUFFER fromDrawable:(CAEAGLLayer *)self.layer];
     glGenFramebuffers(1, &_frameBuffer);
     //设置为当前framebuffer
@@ -261,6 +268,8 @@
     _positionSlot = glGetAttribLocation(_glProgram, "Position");
     _textureSlot = glGetUniformLocation(_glProgram, "Texture");
     _textureCoordsSlot = glGetAttribLocation(_glProgram, "TextureCoords");
+    _projectMatrixSlot = glGetUniformLocation(_glProgram, "projectMatrix");
+    _viewTransformMatrixSlot = glGetUniformLocation(_glProgram, "viewTransformMatrix");
 }
 
 #pragma mark - didDrawImageViaOpenGLES
@@ -351,6 +360,7 @@
     //  [self renderVertices];
     //  [self renderUsingIndex];
     //  [self renderUsingVBO];
+    
     [self renderUsingIndexVBO];
 }
 
@@ -464,6 +474,19 @@
     glVertexAttribPointer(_positionSlot, 3, GL_FLOAT, GL_FALSE, 0, 0);
     glEnableVertexAttribArray(_positionSlot);
     
+    ksMatrixLoadIdentity(&_projectionMatrix);
+    ksMatrixLoadIdentity(&_viewTransformMatrix);
+    float width = self.frame.size.width;
+    float height = self.frame.size.height;
+    
+    ksScale(&_viewTransformMatrix, 200, 200, 0);
+    // Load transformMatrix matrix
+    glUniformMatrix4fv(_viewTransformMatrixSlot, 1, GL_FALSE, (GLfloat*)&_viewTransformMatrix.m[0][0]);
+    
+    ksOrtho(&_projectionMatrix, -width/2, width/2, -height/2, height/2, -10, 10);
+    
+    // Load projection matrix
+    glUniformMatrix4fv(_projectMatrixSlot, 1, GL_FALSE, (GLfloat*)&_projectionMatrix.m[0][0]);
     
     const GLubyte indices[] = {
         0,1,2,

@@ -3,6 +3,7 @@
 #import "GLiveGLUtil.h"
 #import "GLiveAVEnum.h"
 #import "GLiveGLShareInstance.h"
+#import "GLESMath.h"
 
 @interface OpenCameraGLESView ()
 {
@@ -19,6 +20,9 @@
     CGFloat       _zRotateAngle;
     //BOOL          _glHighResolution;
     CGFloat          _contentScale;
+    
+    KSMatrix4 _modelViewMatrix;
+    KSMatrix4 _projectionMatrix;
 }
 @end
 

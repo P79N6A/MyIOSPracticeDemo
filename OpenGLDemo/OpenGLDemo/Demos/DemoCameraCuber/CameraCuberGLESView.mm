@@ -13,6 +13,7 @@
     Quaternion _orientation;
     Quaternion _previousOrientation;
     KSMatrix4 _rotationMatrix;
+    KSMatrix4 _scaleMatrix;
     CGFloat   _contentScale;
 }
 
@@ -340,9 +341,11 @@
     
     // Generate a perspective matrix with a 60 degree FOV
     //
+    
     ksMatrixLoadIdentity(&_projectionMatrix);
     float aspect = width / height;
     ksPerspective(&_projectionMatrix, 60.0, aspect, 4.0f, 12.0f);
+    //ksOrtho(&_projectionMatrix, -width/2, width/2, -height/2, height/2, -10, 10);
     
     // Load projection matrix
     glUniformMatrix4fv(_projectionSlot, 1, GL_FALSE, (GLfloat*)&_projectionMatrix.m[0][0]);
@@ -389,10 +392,16 @@
 - (void)updateSurface
 {
     ksMatrixLoadIdentity(&_modelViewMatrix);
+
     
     ksTranslate(&_modelViewMatrix, 0.0, 0.0, -8);
     
     ksMatrixMultiply(&_modelViewMatrix, &_rotationMatrix, &_modelViewMatrix);
+    
+//    ksMatrixLoadIdentity(&_scaleMatrix);
+//    ksScale(&_scaleMatrix, 200, 200, 200);
+//    ksMatrixMultiply(&_modelViewMatrix, &_scaleMatrix, &_modelViewMatrix);
+    
     
     // Load the model-view matrix
     glUniformMatrix4fv(_modelViewSlot, 1, GL_FALSE, (GLfloat*)&_modelViewMatrix.m[0][0]);
@@ -428,7 +437,8 @@
     if (_currentVBO == nil)
         return;
     
-    int stride = [_currentVBO vertexSize] * sizeof(GLfloat);
+    int sizeoffloat = sizeof(GLfloat);
+    int stride = [_currentVBO vertexSize] * sizeoffloat;
     const GLvoid* normalOffset = (const GLvoid*)(3 * sizeof(GLfloat));
     const GLvoid* texCoordOffset = (const GLvoid*)(6 * sizeof(GLfloat));
     

@@ -31,10 +31,10 @@
     //by applechang test
     int height = SCREEN_HEIGHT;
     int screenWith = SCREEN_WIDTH;
-    int width = height*1.0*9/16;
+//    int width = height*1.0*9/16;
     int x = 0;
     int y = 0;
-    CGRect rc = CGRectMake(x, y, width, height);
+    CGRect rc = CGRectMake(x, y, screenWith, height);
     
     _mp4PlayView = [[GifitPlayView alloc]initWithFrame:rc];
     _mp4PlayView.hidden = FALSE;
@@ -54,7 +54,7 @@
     [self.view bringSubviewToFront:_playBtn];
     
     _files =[NSMutableArray arrayWithCapacity:1];
-    NSString* path =  [[NSBundle mainBundle] pathForResource:@"aixin.mp4" ofType:nil];
+    NSString* path =  [[NSBundle mainBundle] pathForResource:@"momoda.mp4" ofType:nil];
     [_files addObject:path];
     
     
